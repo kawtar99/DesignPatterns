@@ -1,5 +1,8 @@
 package singleton;
 
+/**
+ * This Pattern is useful to create classes with a single instance.
+ */
 public class SingletonObject {
 
     private static SingletonObject instance = new SingletonObject();
