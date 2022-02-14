@@ -1,5 +1,8 @@
 package proxy;
 
+/**
+ * ProxyBook adds more control to the RealBook
+ */
 public class ProxyBook implements Book{
 
     private String title;
