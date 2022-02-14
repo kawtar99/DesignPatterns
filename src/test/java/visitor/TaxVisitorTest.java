@@ -10,17 +10,18 @@ class TaxVisitorTest {
     public void shouldVisitFood(){
         Visitor taxVisitor = new TaxVisitor();
         Food milk = new Food();
+        milk.setPrice(10);
         double tax = milk.accept(taxVisitor);
-        assertEquals(tax, 0.5);
+        assertEquals(tax, 5);
     }
 
     @Test
     public void shouldVisitClothing(){
         Visitor taxVisitor = new TaxVisitor();
         Clothing shirt = new Clothing();
-
+        shirt.setPrice(25);
         double tax = shirt.accept(taxVisitor);
-        assertEquals(tax, 1.1);
+        assertEquals(tax, 1.1*25);
     }
 
 }

@@ -15,6 +15,16 @@ class CarDecoratorTest {
         assertEquals(sportsCar.getCarType().toString(), "Basic CarSports car");
     }
 
+    @Test
+    public void shouldAssembleCarLuxury(){
+        CarDecorator luxuryCar = new LuxuryCar(new SportsCar(new BasicCar()));
+        luxuryCar.assemble();
+
+        assertEquals(luxuryCar.getCarType().toString(), "Sports carLuxury car");
+    }
+
+
+
 
 
 }
