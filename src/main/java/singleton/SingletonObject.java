@@ -1,5 +1,7 @@
 package singleton;
 
+import java.util.Optional;
+
 /**
  * This Pattern is useful to create classes with a single instance.
  */
